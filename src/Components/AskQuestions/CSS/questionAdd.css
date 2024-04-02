@@ -49,14 +49,29 @@
     border: 1px solid rgba(150, 30, 30, 0.342);
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.785);
+    height: 170px;
 }
 
 .title {
     font-size:large;
-    margin: 2px 20px;
+    margin: 10px 20px;
 }
 
 .title-desc {
     font-size:small;
     margin: 2px 20px;
+}
+
+.question-title > input{
+    width: 800px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-style: oblique;
+}
+
+.question-title > button {
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 1cqi;
 }

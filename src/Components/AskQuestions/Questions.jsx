@@ -31,7 +31,8 @@ Looking to ask a non-programming question? See the topics here to find a relevan
             <div className="question-option">
               <div className="question-title"><h3 className='title'>Title</h3>
                 <small className='title-desc'>Be specific and imagine you're asking a question to another person</small><br />
-                <input type="text" placeholder='Add Question Title'/>
+                <input type="text" placeholder='Add Question Title'/><br />
+                <button>next</button>
               </div>
             </div>
             <div className="question-option">
@@ -41,7 +42,7 @@ Looking to ask a non-programming question? See the topics here to find a relevan
               </div>
             </div>
             <div className="question-option">
-            <div className="title"><h3>Tags</h3>
+              <div className="title"><h3>Tags</h3>
                 <small>Add up to 5 tags to describe what your question is about</small>
                 <TagsInput name ="tags" placeHolder='press enter to add new tag'/>
               </div>
