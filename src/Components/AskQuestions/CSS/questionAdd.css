@@ -1,5 +1,6 @@
 .add-question {
     background-color: rgba(184, 202, 202, 0.599);
+    height: 1500px;
 }
 
 .add-questions-container {
@@ -74,4 +75,49 @@
     margin-left: 20px;
     margin-top: 10px;
     line-height: 1cqi;
+}
+
+.question-option-body {
+    border: 2px solid black;
+    height: 500px;
+    margin-left: 80px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.785);
+    border: 1px solid rgba(150, 30, 30, 0.342);
+}
+
+.body-title >h3{
+    font-size: x-small;
+    margin: 10px 30px;
+    font-size:large;
+}
+
+.body-title > small {
+    font-size: small;
+    margin: 10px 30px;
+}
+
+.react-quill {
+    height:320px;
+    margin: 0 30px 0 30px;
+    border-radius: 10px!important;
+    border: 1cqmax;
+}
+
+.question-option-body > button {
+    margin-top: 50px;
+    margin-left: 30px;
+    line-height: 1cqi;
+}
+
+.question-tags {
+    border: 1px solid rgba(150, 30, 30, 0.342);
+    margin-left: 80px;
+    margin-top: 50px;
+    background-color: aliceblue;
+}
+
+.add-question > button {
+    margin-top: 12rem;
+    margin-left: 80px;
 }

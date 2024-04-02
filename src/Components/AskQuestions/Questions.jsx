@@ -35,13 +35,14 @@ Looking to ask a non-programming question? See the topics here to find a relevan
                 <button>next</button>
               </div>
             </div>
-            <div className="question-option">
-            <div className="body-title"><h3>Body</h3>
+            <div className="question-option-body">
+              <div className="body-title"><h3>Body</h3>
                 <small>Including all the information someone would need to answer your question</small>
                 <ReactQuill className='react-quill' theme="snow"/>
               </div>
+              <button>next</button>
             </div>
-            <div className="question-option">
+            <div className="question-tags">
               <div className="title"><h3>Tags</h3>
                 <small>Add up to 5 tags to describe what your question is about</small>
                 <TagsInput name ="tags" placeHolder='press enter to add new tag'/>
