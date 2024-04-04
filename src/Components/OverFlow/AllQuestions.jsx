@@ -27,7 +27,7 @@ function AllQuestions() {
         </div>
 
         <div className="question-answer">
-          <Link>How to use drag and drop in ant</Link>
+          <Link to="/question">How to use drag and drop in ant</Link>
           <div style={{
             width : "90%"
           }}>
