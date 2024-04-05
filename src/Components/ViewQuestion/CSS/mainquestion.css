@@ -1,0 +1,19 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-question {
+    font-size: larger;
+    min-width: 40px;
+}
+
+.main-container > button {
+    margin-left: 100px;
+}
