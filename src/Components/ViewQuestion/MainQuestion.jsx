@@ -12,22 +12,27 @@ import "./CSS/mainquestion.css"
 function MainQuestion() {
 
   const [show, setShow] = useState(false);
+  const [showBox, setShowBox] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowBox(true);
+  };
 
   return (
     <div className='main'>
       <div className="main-container">
         <div className="main-top">
         <h2 className='main-question'>This is question title</h2>
-          <Link to="/add-question">
+          <Link to="/add-question" className="btn">
             <button>Ask Query</button>
           </Link>
         </div>
         
         <div className="main-description">
           <div className="info">
-            <p>Timestap</p>
-            <p><span>Active</span> today</p>
-            <p><span>Viewed</span> 43 times</p>
+            <p className='p'>Timestap</p>
+            <p className='p'><span>Active</span> today</p>
+            <p className='p'><span>Viewed</span> 43 times</p>
           </div>
         </div>
 
@@ -55,18 +60,22 @@ function MainQuestion() {
 
               <div className="comments">
                 <div className="comment">
-                  <p>This is comment - <span>User name</span> <small>Timestamp</small></p>
+                  <h5>This is comment - <span>User name</span> <small>Timestamp</small> </h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti similique nisi iusto recusandae? Explicabo corporis minima dignissimos possimus quas nesciunt accusantium cupiditate saepe! Delectus hic totam beatae error obcaecati mollitia.
+                  Nesciunt provident placeatm dolor sit amet consectetur adipisicing elit. Deleniti similique nisi iusto recusandae? Explicabo corporis minima dignissimos possimus quas nesciunt accusantium cupiditate saepe! Delectus hic totam beatae error obcaecati mollitia.
+                  Nesciunt provident placeat fuga quibusdam aliquid similique quis cumque eligendi dolore ducimus harum, quod consequatur repellendus impedit laudantium porro, esse architecto!er</p>
                 </div>
               </div>
 
-              <p onClick={()=>setShow(!show)}>Add commment</p>
+              <p onClick={()=>setShow(!show)} className='adding-comments'><button>Add comment</button></p>
               {
                 show && (
                   <div className='title'>
                     <textarea type="text" placeholder='add you comment...' rows={5} style={{
                       
-                    }}></textarea>
-                    <button>Add Comment</button>
+                    }} className='title-comments'></textarea>
+                    <button onClick={handleButtonClick}>Add Comment</button>
+                    
                   </div>
                 )
               }
